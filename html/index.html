@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Satisfaction Survey</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">  
+        <h1 id="title" class="text-center">Student Satisfaction Survey</h1>
+        <p id="description" class="text-center">Thank you for taking the time to complete this survey!</p>
+      </header> 
+      <form method="post"  id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name" class="inline">Name: </label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">  
+                 <label id="email-label" for="email" class="inline">Email:</label>
+                 <input id="email" name="email" type="email" class="form-control" placeholder="Enter your email" required />
+            </div> 
+            <div class="form-group"> 
+                <label id="number-label" for="number" class="inline">Class year: </label>
+                <input id="number" name="class-year" class="form-control" type="number"  placeholder="Enter your class year"required min="1" max="4" />
+            </div>
+            <div class="form-group">
+              <p class="align">How accessible are your teachers for questions and assistance?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select one option</option>
+                <option value="very">Very</option>
+                <option value="somewhat">Somewhat accessible</option>
+                <option value="not">Not accessible</option>
+                <option value="preferNo">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p class="align">Is the school providing adequate learning resources?</p>
+              <label>
+                <input
+                  name="learning-resources"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                />Yes</label
+              >
+              <label>
+                <input
+                name="learning-resources"
+                  value="no"
+                  type="radio"
+                  class="input-radio"
+                />No</label
+              >
+            </div>
+            <div class="form-group">
+              <p class="align">
+                What are your favorite subjects?
+                <span class="clue">(Check all that apply)</span>
+              </p>
+    
+              <label
+                ><input
+                  name="favorite"
+                  value="math"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Math</label
+              >
+              <label>
+                <input
+                  name="favorite"
+                  value="english"
+                  type="checkbox"
+                  class="input-checkbox"
+                />English</label
+              >
+              <label
+                ><input
+                  name="favorite"
+                  value="science"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Science</label
+              >
+              <label
+                ><input
+                  name="favorite"
+                  value="history"
+                  type="checkbox"
+                  class="input-checkbox"
+                />History</label
+              >
+              <label
+                ><input
+                  name="favorite"
+                  value="geography"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Geography</label
+              >
+              </div>
+    
+            <div class="form-group">
+              <p class="align">What would you like to change about the lessons?</p>
+              <textarea
+                id="changes"
+                class="input-textarea"
+                name="changes"
+                placeholder="Enter your response here..."
+              ></textarea>
+            </div>
+
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    
+    </body>
+</html>
